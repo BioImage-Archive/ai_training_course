@@ -4,9 +4,9 @@
 
 ## GPU support:
 
-Due to the fast/parallel matrix multiplicative properties of GPUs they have seen a strong co-option into machine learning.
-Without a GPU availiable most deep learning and nearly all machine learning on images is a fools errand.
-The current industry preference is towards Nvidia's GPUs for DL/ML and as such support for AMD and integrate Intel graphics is limited at best.
+Due to the fast/parallel matrix multiplicative properties of GPUs, they have seen a strong co-option into machine learning.
+Without a GPU availiable, most deep learning, and nearly all machine learning on images, is intractable.
+The current industry preference is towards Nvidia's GPUs for DL/ML and as such, support for AMD and integrated Intel graphics is limited at best.
 
 ### Driver installation:
 
