@@ -162,7 +162,7 @@ To check this didn't obviously fail:
 ## pyTorch vs Tensorflow
 
 pyTorch (Facebook) and Tensorflow (Google) are both machine learning libraries which implement the low level functions needed to build and deploy deep learning models.
-pyTorch is younger and with a somewhat cleaner syntax, however a large portion of established models are still Tensorflow based only with no plans to move to pyTorch.
+pyTorch is younger and with a somewhat cleaner syntax, however a large portion of established models are still Tensorflow based with no plans to move to pyTorch.
 
 
 ### Check GPU support:
