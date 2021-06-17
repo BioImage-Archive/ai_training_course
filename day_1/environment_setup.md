@@ -172,11 +172,10 @@ pyTorch is younger and with a somewhat cleaner syntax, however a large portion o
 
 |   |   |
 |---|---|
-|https://scikit-learn.org/ |A high quality machine learning library that is geared towards learning frame tables and DataFrames|
-|https://keras.io/|Attempts to standard the machine learning and model building process across multiple different backends, widely used.|
-|https://www.fast.ai/|Another higher level library (like Keras), uses pyTorch
-|
-|https://skorch.readthedocs.io/|Marries pyTorch models to the sckit-learn interface|
+| https://scikit-learn.org/ | A high quality machine learning library that is geared towards learning frame tables and DataFrames|
+| https://keras.io/|Attempts to standard the machine learning and model building process across multiple different backends, widely used.|
+| https://www.fast.ai/| Another higher level library (like Keras), uses pyTorch
+|https://skorch.readthedocs.io/| Marries pyTorch models to the sckit-learn interface |
 
 
 ## Jupyter
@@ -185,6 +184,7 @@ Ju[Lia]Py[thon]e[R] provides a web-based interface to an interactive coding envi
 The advantage of interaction coding environments is the ability ot explore and develope dynamically.
 
 To run a jupyter notebook:
+
     jupyter notebook
 
 
