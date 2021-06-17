@@ -1,6 +1,6 @@
 # Settings up machine learning environments
 
-    N.b All commands in this box are to be entered into a terminal
+    N.b All commands in these boxes are to be entered into a terminal
 
 ## GPU support:
 
