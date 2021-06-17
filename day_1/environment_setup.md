@@ -87,7 +87,7 @@ Installing many packages with Pip:
 
 ### Anaconda
 
-Anaconda is a more hollistic and general system wide package manager geared towards science and data science. To this end it can manage Python as well R installations package management.
+Anaconda is a more holistic and general system wide package manager geared towards science and data science. To this end it can manage Python as well R installations package management.
 The stock version of Anaconda all comes preinstalled with a swathe of useful packages.
 
 We recommend using anaconda as (even though it can be slow and unwieldy) it does provide features that are beneficial for machine learning, including driver installations, reproducible environments using desired-state-files and easy-to-use package environment isolation (so that incompatible packages can coxist on the same machine).
