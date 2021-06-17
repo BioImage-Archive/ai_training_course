@@ -15,6 +15,7 @@ The current industry preference is towards Nvidia's GPUs for DL/ML and as such, 
     sudo add-apt-repository ppa:graphics-drivers/ppa
     sudo apt install nvidia-driver-460
 
+
 🪟 Windows:
 
     https://www.nvidia.co.uk/Download/index.aspx?lang=en-uk
@@ -29,6 +30,7 @@ Installing Nvidia graphics drivers on MacOS is near impossible (and at best diff
 Is Nvidia's proprietary parallel processing software that interfaces with their graphics cards and is crucial for a functioning GPU accelerated ML environment. 
 
 🪟 Windows:
+
     https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
 
 🐧 Ubuntu:
