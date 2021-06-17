@@ -175,9 +175,12 @@ pyTorch is younger and with a somewhat cleaner syntax, however a large portion o
 |   |   |
 |---|---|
 | https://scikit-learn.org/ | A high quality machine learning library that is geared towards learning frame tables and DataFrames|
-| https://keras.io/|Attempts to standard the machine learning and model building process across multiple different backends, widely used.|
+| https://keras.io/|Attempts to standardise the machine learning and model building process across multiple different backends, widely used.|
 | https://www.fast.ai/| Another higher level library (like Keras), uses pyTorch
 |https://skorch.readthedocs.io/| Marries pyTorch models to the sckit-learn interface |
+|https://pandas.pydata.org/|For managing DataFrames|
+<!-- |https://pandas.pydata.org/|For managing DataFrames| -->
+
 
 
 ## Jupyter
