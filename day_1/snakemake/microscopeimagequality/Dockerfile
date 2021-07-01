@@ -9,7 +9,7 @@ WORKDIR "./microscopeimagequality"
 RUN pip3 install --editable .
 # Download the pretrained model
 RUN microscopeimagequality download 
-#Add microscopeimagequality to the path
+# Add microscopeimagequality to the path
 ENV PYTHONPATH="${PYTHONPATH}:~/microscopeimagequality"
-#Make the microscopeimagequality application the default command on running
+# Make the microscopeimagequality application the default command on running
 ENTRYPOINT ["microscopeimagequality"]
