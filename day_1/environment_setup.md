@@ -57,7 +57,7 @@ https://www.python.org/download/
 
 🐧 Ubuntu: 
 
-    sudo apt-get install python3.8
+    sudo apt-get install python3.8 --yes
 
 🍎 MacOs:
 
@@ -77,7 +77,10 @@ As such there is an extensive set of libraries availiable with each being furthe
 ### Pip
 
 Pip Installs Packages (pip) for Python and attempts to manage packages' dependencies for you by reading the version requirements of each package recursively.
-Pip comes natively with Python installations
+Pip usually comes natively with Python installations.
+If not then run:
+
+    sudo apt install python3-pip --yes
 
 Installing a package with Pip:
 
@@ -133,7 +136,7 @@ Denoting that we are now in the 'base' conda environment. Be extremely cautious 
 
 We recommend:
 
-    conda install jupyterlab nb_conda_kernels pip
+    conda install jupyterlab nb_conda_kernels pip --yes
 
 nb_conda_kernels is useful for helping jupyter detecting availiable environments
 
@@ -146,13 +149,13 @@ We install ipython here so that nb_conda_kernels can detect any new environments
 And then switch to it:
     conda activate ml
 
-From here we can do one of two things, we can either use conda to install all of the ML packages we want or we can use pip or even a mixture. Conda is extremely diligent (to a fault) when it looks at package interdepenence and in extreme cases can take 10s of minutes to decide what it wants to do. For now we would recommend installing using conda and falling back to pip if needed:
+From here we can do one of two things, we can either use conda to install all of the ML packages we want or we can use pip or even a mixture. Conda is extremely diligent (to a fault) when it looks at package interdependence and in extreme cases can take 10s of minutes to decide what it wants to do. For now we would recommend installing using conda and falling back to pip if needed:
 
 
 Linux/Windows only:
 
     conda config --add channels pytorch
-    conda install tensorflow pytorch torchvision torchaudio cudatoolkit=10.2
+    conda install tensorflow tensorflow-gpu pytorch torchvision torchaudio cudatoolkit=10.2
 
 To check this didn't obviously fail:
 

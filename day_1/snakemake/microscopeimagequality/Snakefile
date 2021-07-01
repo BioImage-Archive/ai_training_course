@@ -1,0 +1,18 @@
+
+FILE = "../in/Stardist/Test - Images/cell migration R1 - Position 58_XY1562686154_Z0_T00_C1-image76.tif"
+FILE_OUT_QUALITY = "../out/quality"
+
+
+rule all:
+	input:
+		FILE_OUT_QUALITY
+
+rule docker_leg:
+	input:
+		FILE
+	output:
+		directory(FILE_OUT_QUALITY)
+	container:
+		"docker://ctr26/microscopeimagequality:latest"
+	shell:
+		"microscopeimagequality predict --output '{output}' '{input}'"

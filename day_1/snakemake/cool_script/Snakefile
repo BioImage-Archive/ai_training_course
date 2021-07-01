@@ -1,0 +1,46 @@
+
+FILE = "../in/Stardist/Test - Images/cell migration R1 - Position 58_XY1562686154_Z0_T00_C1-image76.tif"
+FILE_OUT = "../out/out.zarr"
+FILE_OUT_PNG = "../out/out.png"
+# # FILE_OUT_QUALITY = "quality.txt"
+# FILE_OUT_QUALITY = "../out/quality"
+
+
+# All is a special rule that takes in the last output of the pipeline
+rule all:
+	input:
+		FILE_OUT
+
+rule scale_image_down_make_zarr:
+	input:
+		FILE
+	output:
+		directory(FILE_OUT)
+	# container:
+	# 	"docker://continuumio/miniconda"
+	conda:
+		"environment.yml"
+	shell:
+		"python cool_script.py '{input}' '{output}'"
+	# script:
+	#     "cool_script.py {input} {output}"
+
+# rule make_a_nice_png:
+# 	input:
+# 		FILE_OUT
+# 	output:
+# 		FILE_OUT_PNG
+# 	conda:
+# 		"environment.yml"
+# 	shell:
+# 		"python cool_script_2.py '{input}' '{output}'"
+
+# rule docker_leg:
+# 	input:
+# 		FILE
+# 	output:
+# 		directory(FILE_OUT_QUALITY)
+# 	container:
+# 		"docker://ctr26/microscopeimagequality:latest"
+# 	shell:
+# 		"microscopeimagequality predict --output '{output}' '{input}'"

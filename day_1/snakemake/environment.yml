@@ -1,0 +1,14 @@
+name: snakemake
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.8   # or 2.7
+  - pims
+  - ipython
+  - pip
+  - numpy
+  - scikit-learn
+  - snakemake
+  - pip:
+    - ome-zarr
