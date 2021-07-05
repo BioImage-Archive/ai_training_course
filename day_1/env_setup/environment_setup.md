@@ -189,7 +189,7 @@ pyTorch is younger and with a somewhat cleaner syntax, however a large portion o
 ## Jupyter
 
 Ju[Lia]Py[thon]e[R] provides a web-based interface to an interactive coding environment originally aimed at the Julia Python and R languages but now including more including Java, Sage, Matlab (https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) and more.
-The advantage of interaction coding environments is the ability ot explore and develope dynamically.
+The advantage of interaction coding environments is the ability ot explore and develop dynamically.
 
 To run a jupyter notebook:
 

@@ -251,6 +251,8 @@ Snakemake is kind enough to even generate nice HTML reports for us:
 
 ### Multiple files
 
+
+
 ## Exercises:
 
 ### cool_script.py
