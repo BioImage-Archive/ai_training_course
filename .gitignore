@@ -1,7 +1,7 @@
-day_1/snakemake/.*
-day_1/snakemake/cool_script/.*
-day_1/snakemake/Snake_multi/.*
-day_1/snakemake/cool_script_2/.*
-day_1/snakemake/microscopeimagequality/.*
-day_1/snakemake/in
-day_1/snakemake/out
+snakemake/.*
+snakemake/cool_script/.*
+snakemake/Snake_multi/.*
+snakemake/cool_script_2/.*
+snakemake/microscopeimagequality/.*
+snakemake/in
+snakemake/out
