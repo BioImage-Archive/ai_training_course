@@ -1,0 +1,14 @@
+name: tensorflow
+channels:
+  - pytorch
+  - conda-forge
+  - bioconda
+  - anaconda
+dependencies:
+  - python=3.8   # or 2.7
+  - ipython
+  - pip
+  - tensorflow
+  - tensorflow-gpu
+  - cudatoolkit=10.2
+  - pip:

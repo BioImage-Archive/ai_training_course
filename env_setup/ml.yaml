@@ -1,0 +1,18 @@
+name: ml
+channels:
+  - conda-forge
+  - bioconda
+  - anaconda
+  - pytorch
+dependencies:
+  - python=3.8   # or 2.7
+  - ipython
+  - pip
+  - tensorflow
+  - tensorflow-gpu
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=10.2
+  # - pip:
+
