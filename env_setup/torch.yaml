@@ -4,9 +4,9 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
-  - python=3.8   # or 2.7
+  # - python=3.8   # or 2.7
   - ipython
   - pip
   - pytorch
-  - cudatoolkit=10.2
-  - pip:
+  - cudatoolkit
+  # - pip:
