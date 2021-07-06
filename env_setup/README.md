@@ -142,7 +142,7 @@ nb_conda_kernels is useful for helping jupyter detecting availiable environments
 
 Let's create a new envionment for machine learning:
 
-    conda create --name ml python=3.8 ipython --yes
+    conda create --name ml pip ipython --yes
 
 We install ipython here so that nb_conda_kernels can detect any new environments we create
 
@@ -162,6 +162,24 @@ To check this didn't obviously fail:
     python -c "import tensorflow; print(tensorflow.__version__)"
     python -c "import torch; print(torch.__version__)"
 
+
+## `conda create`
+
+Conda can struggle to balance version numbers and dependenices when adding packages to a created environment.
+As a safety net you can use `conda create` to create environments from scratch that are more likely to complete succesfully:
+
+ML env:
+
+    conda create --name ml  pip ipython tensorflow-gpu cudatoolkit pytorch  -c pytorch -c anaconda
+
+Tensorflow
+
+    conda create --name tensorflow pip ipython tensorflow-gpu cudatoolkit -c anaconda
+
+pyTorch
+
+    conda create --name torch pip ipython tensorflow-gpu cudatoolkit -c conda-forge
+
 ## pyTorch vs Tensorflow
 
 pyTorch (Facebook) and Tensorflow (Google) are both machine learning libraries which implement the low level functions needed to build and deploy deep learning models.
@@ -180,11 +198,28 @@ pyTorch is younger and with a somewhat cleaner syntax, however a large portion o
 | https://scikit-learn.org/ | A high quality machine learning library that is geared towards learning frame tables and DataFrames|
 | https://keras.io/|Attempts to standardise the machine learning and model building process across multiple different backends, widely used.|
 | https://www.fast.ai/| Another higher level library (like Keras), uses pyTorch
-|https://skorch.readthedocs.io/| Marries pyTorch models to the sckit-learn interface |
-|https://pandas.pydata.org/|For managing DataFrames|
+| https://skorch.readthedocs.io/| Marries pyTorch models to the sckit-learn interface |
+| https://pandas.pydata.org/|For managing DataFrames|
 <!-- |https://pandas.pydata.org/|For managing DataFrames| -->
 
+## env files
 
+The environments listed above can also be generated using deterministic YAML files ex (`ml.yaml`):
+
+    name: ml
+    channels:
+    - pytorch
+    - anaconda
+    dependencies:
+    # - python=3.8   # or 2.7
+    - ipython
+    - pip
+    - tensorflow-gpu
+    - cudatoolkit
+    - pytorch
+    # - pip:
+
+N.B. white space is import with YAML formats however this example above can be permuted to most conda environments
 
 ## Jupyter
 

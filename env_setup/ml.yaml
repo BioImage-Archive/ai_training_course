@@ -1,7 +1,6 @@
 name: ml
 channels:
   - pytorch
-  # - pytorch
   # - conda-forge
   # - bioconda
   - anaconda
