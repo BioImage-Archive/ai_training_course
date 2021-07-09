@@ -3,8 +3,8 @@
 
 # FILE = "in/Stardist/Test - Images/cell migration R1 - Position 58_XY1562686154_Z0_T00_C1-image76.tif"
 
-FILE = [
-	"in/Stardist/Test - Images/cell migration R1 - Position 58_XY1562686154_Z0_T00_C1-image76.tif",]
+FILE = "in/Stardist/Test - Images/cell migration R1 - Position 58_XY1562686154_Z0_T00_C1-image76.tif"
+FILE = "in/Stardist/Test - Images/cell migration R1 - Position 58_XY1562686154_Z0_T00_C1-image76.tif"
 FILE_OUT = "out/out.zarr"
 FILE_OUT_PNG = "out/out.png"
 # FILE_OUT_QUALITY = "quality.txt"
@@ -15,7 +15,7 @@ FILE_OUT_QUALITY = "out/quality"
 # All is a special rule that takes in the last output of the pipeline
 rule all:
 	input:
-		FILE_OUT_PNG,FILE_OUT_QUALITY,FILE_OUT
+		FILE_OUT_PNG,FILE_OUT_QUALITY,FILE_OUT,FILE
 
 rule scale_image_down_make_zarr:
 	input:
@@ -43,7 +43,7 @@ rule make_a_nice_png:
 
 rule docker_leg:
 	input:
-		expand(FILE)
+		FILE
 	output:
 		directory(FILE_OUT_QUALITY)
 	container:
