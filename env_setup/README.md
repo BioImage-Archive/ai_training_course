@@ -142,9 +142,9 @@ nb_conda_kernels is useful for helping jupyter detecting availiable environments
 
 Let's create a new envionment for machine learning:
 
-    conda create --name ml pip ipython --yes
+    conda create --name ml pip ipython ipykernel --yes
 
-We install ipython here so that nb_conda_kernels can detect any new environments we create
+We install ipython and ipykernel here so that nb_conda_kernels can detect any new environments we create
 
 And then switch to it:
     conda activate ml
@@ -174,11 +174,11 @@ ML env:
 
 Tensorflow
 
-    conda create --name tensorflow pip ipython tensorflow-gpu cudatoolkit -c anaconda
+    conda create --name tensorflow pip ipython ipykernel tensorflow-gpu cudatoolkit -c anaconda
 
 pyTorch
 
-    conda create --name torch pip ipython pytorch cudatoolkit -c conda-forge -c pytorch
+    conda create --name torch pip ipython pytorch ipykernel cudatoolkit -c conda-forge -c pytorch
 
 ## pyTorch vs Tensorflow
 
