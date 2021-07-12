@@ -170,7 +170,7 @@ As a safety net you can use `conda create` to create environments from scratch t
 
 ML env:
 
-    conda create --name ml  pip ipython tensorflow-gpu cudatoolkit pytorch  -c pytorch -c anaconda
+    conda create --name ml  pip ipython ipykernel tensorflow-gpu cudatoolkit pytorch  -c pytorch -c anaconda
 
 Tensorflow
 
