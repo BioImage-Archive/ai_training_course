@@ -178,7 +178,7 @@ Tensorflow
 
 pyTorch
 
-    conda create --name torch pip ipython tensorflow-gpu cudatoolkit -c conda-forge
+    conda create --name torch pip ipython pytorch cudatoolkit -c conda-forge -c pytorch
 
 ## pyTorch vs Tensorflow
 
