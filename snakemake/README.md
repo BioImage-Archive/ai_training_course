@@ -14,6 +14,8 @@ The more advanced workflow managers can then deploy to cloud infrastructure for 
 This demo will use Snakemake as it's workflow manager, a popular alternative is Nextflow.
 Snakemake is written in- and can interpret raw Python and so is more fitting to this course.
 
+    conda env update --file environment.yml
+
 ### Cool_script
 
 We start by generating a file called `cool_script.py`
