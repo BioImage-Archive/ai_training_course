@@ -24,10 +24,17 @@ if out_file is None:
 image = pims.open(file_name)
 image_np = np.array(pims.open(file_name)[0])
 
+# Exercise 2
+
+image_np = image_np - np.median(image_np.flatten())
+
 # %%
 from sklearn.preprocessing import minmax_scale
 image_np_base_correct = image_np-image_np.min()
 image_np_scaled = image_np_base_correct/image_np_base_correct.max()
+
+# Exercise 1
+image_np_scaled = 255*image_np_scaled
 
 # scaled = minmax_scale(image_np,feature_range=(0,1))
 # %%

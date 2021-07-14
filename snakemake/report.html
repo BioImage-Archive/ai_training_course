@@ -406,8 +406,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
       <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="https://snakemake.readthedocs.io">Snakemake Report</a>
       <div class="nav navbar-nav navbar-center" id="brand"></div>
       <ul class="nav navbar-nav navbar-right" style="padding-right: 10px;">
-        <li class="text-white">Wed Jun 30 10:49:47 2021 GMT</li>
-        <li><a class="text-white" href="https://snakemake.readthedocs.io">Snakemake 6.5.1</a></li>
+        <li class="text-white">Wed Jul 14 10:04:30 2021 UTC</li>
+        <li><a class="text-white" href="https://snakemake.readthedocs.io">Snakemake 6.5.3</a></li>
       </ul>
       <!--<input id="searchbar" class="invisible form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">-->
     </nav>
@@ -634,6 +634,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                       <td class="rule-property" colspan=2>
                         <ul>
                             <li>in/Stardist/Test - Images/cell migration R1 - Position 58_XY1562686154_Z0_T00_C1-image76.tif</li>
+                            <li>out/out.png</li>
                         </ul>
                       </td>
                     </tr>
@@ -664,7 +665,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </tr>
                     <tr>
                       <td class="rule-property" colspan=2>
-                        <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="source"><pre><span></span><code>microscopeimagequality predict --output <span class="s1">&#39;{output}&#39;</span> <span class="s1">&#39;{input}&#39;</span>
+                        <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="source"><pre><span></span><code>microscopeimagequality predict --output <span class="s1">&#39;{output}&#39;</span> <span class="s1">&#39;{input.file}&#39;</span>
 </code></pre></div>
 </td></tr></table>
                       </td>
@@ -1336,8 +1337,8 @@ if (typeof module !== 'undefined') {
 
       var rulegraph_spec = {
         "$schema": "https://vega.github.io/schema/vega/v5.json",
-        "width": 387.44,
-        "height": 182.0,
+        "width": 328.84000000000003,
+        "height": 254.0,
         "padding": 0,
         "autosize": "none",
 
@@ -1349,11 +1350,11 @@ if (typeof module !== 'undefined') {
         "data": [
           {
             "name": "node-data",
-            "values": [{'rule': 'all', 'fx': 148.44, 'fy': 162.0}, {'rule': 'docker_leg', 'fx': 60.445, 'fy': 90.0}, {'rule': 'make_a_nice_png', 'fx': 267.44, 'fy': 90.0}, {'rule': 'scale_image_down_make_zarr', 'fx': 207.44, 'fy': 18.0}]
+            "values": [{'rule': 'all', 'fx': 177.84, 'fy': 234.0}, {'rule': 'docker_leg', 'fx': 177.84, 'fy': 162.0}, {'rule': 'make_a_nice_png', 'fx': 208.84, 'fy': 90.0}, {'rule': 'scale_image_down_make_zarr', 'fx': 148.84, 'fy': 18.0}]
           },
           {
             "name": "link-data",
-            "values": [{'target': 1, 'source': 0, 'value': 1}, {'target': 2, 'source': 0, 'value': 1}, {'target': 3, 'source': 0, 'value': 1}, {'target': 3, 'source': 2, 'value': 1}]
+            "values": [{'target': 1, 'source': 0, 'value': 1}, {'target': 2, 'source': 0, 'value': 1}, {'target': 2, 'source': 1, 'value': 1}, {'target': 3, 'source': 0, 'value': 1}, {'target': 3, 'source': 2, 'value': 1}]
           }
         ],
 
@@ -1461,7 +1462,7 @@ if (typeof module !== 'undefined') {
       var runtimes_spec = {
         "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
         "description": "Runtimes of jobs.",
-        "data": {"values": [{'rule': 'docker_leg', 'runtime': 5.256671905517578}, {'rule': 'make_a_nice_png', 'runtime': 0.3066670894622803}, {'rule': 'scale_image_down_make_zarr', 'runtime': 0.7600007057189941}]},
+        "data": {"values": [{'rule': 'docker_leg', 'runtime': 7.508003234863281}, {'rule': 'make_a_nice_png', 'runtime': 0.26399993896484375}, {'rule': 'scale_image_down_make_zarr', 'runtime': 0.8040003776550293}]},
         "mark": "point",
         "encoding": {
           "x": {"field": "runtime", "type": "quantitative",
@@ -1478,7 +1479,7 @@ if (typeof module !== 'undefined') {
         "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
         "description": "Timeline of jobs.",
         "data": {
-          "values": [{'rule': 'docker_leg', 'starttime': '2021-06-30T10:49:15.907733', 'endtime': '2021-06-30T10:49:21.164405'}, {'rule': 'make_a_nice_png', 'starttime': '2021-06-30T10:49:16.684400', 'endtime': '2021-06-30T10:49:16.991067'}, {'rule': 'scale_image_down_make_zarr', 'starttime': '2021-06-30T10:49:15.911066', 'endtime': '2021-06-30T10:49:16.671067'}]
+          "values": [{'rule': 'docker_leg', 'starttime': '2021-07-14T09:28:11.673100', 'endtime': '2021-07-14T09:28:19.181103'}, {'rule': 'make_a_nice_png', 'starttime': '2021-07-14T09:28:11.389100', 'endtime': '2021-07-14T09:28:11.653100'}, {'rule': 'scale_image_down_make_zarr', 'starttime': '2021-07-14T09:28:10.565100', 'endtime': '2021-07-14T09:28:11.369100'}]
         },
         "mark": "point",
         "encoding": {

@@ -41,15 +41,17 @@ rule make_a_nice_png:
 	shell:
 		"python cool_script_2.py '{input}' '{output}'"
 
+# The trick here it to take the output of the previous rule as the input of the next rule and then read the docs on how to handle multi input files:
+
 rule docker_leg:
 	input:
-		FILE
+		file=FILE,png=FILE_OUT_PNG
 	output:
 		directory(FILE_OUT_QUALITY)
 	container:
 		"docker://ctr26/microscopeimagequality:latest"
 	shell:
-		"microscopeimagequality predict --output '{output}' '{input}'"
+		"microscopeimagequality predict --output '{output}' '{input.file}'"
 
 rule report:
 	input: FILE_OUT_QUALITY

@@ -31,6 +31,9 @@ from PIL import Image
 im = Image.fromarray((arr*255).astype(np.uint8))
 #%%
 size = (np.array([int(im.height),int(im.width)])*0.5).astype(int)
+# Exercise 3
+size = (np.array([int(im.height),int(im.width)*9/21])).astype(int)
+
 im = im.resize(size, Image.ANTIALIAS)
 im.save(out_file)
 # %%
