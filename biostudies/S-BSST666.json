@@ -1,0 +1,226 @@
+{
+  "accno" : "S-BSST666",
+  "attributes" : [ {
+    "name" : "Title",
+    "value" : "ZeroCostDL4Mic - Training and Testing datasets"
+  }, {
+    "name" : "ReleaseDate",
+    "value" : "2021-06-17"
+  } ],
+  "section" : {
+    "type" : "Study",
+    "attributes" : [ {
+      "name" : "Title",
+      "value" : "ZeroCostDL4Mic - Training and Testing datasets"
+    }, {
+      "name" : "Description",
+      "value" : "Training and test data used in ZeroCostDL4Mic, can be used as a standard datasets or always-online reference sets for testing\n"
+    }, {
+      "name" : "Organism",
+      "value" : "Homo sapiens (human)"
+    }, {
+      "name" : "fnet",
+      "value" : "https://zenodo.org/record/3748967#.YMtSj5NKiZw"
+    }, {
+      "name" : "Noise2Void (2D)",
+      "value" : "https://zenodo.org/record/3713315#.YMtSjJNKiZw"
+    }, {
+      "name" : "Care (2D)",
+      "value" : "https://zenodo.org/record/3713330#.YMtSi5NKiZw"
+    }, {
+      "name" : "Noise2Void (3D)",
+      "value" : "https://zenodo.org/record/3713326#.YMtSipNKiZw"
+    }, {
+      "name" : "CycleGAN",
+      "value" : "https://zenodo.org/record/3941884#.YMtShpNKiZw"
+    }, {
+      "name" : "pix2pix",
+      "value" : "https://zenodo.org/record/3941889#.YMtShZNKiZw"
+    }, {
+      "name" : "YoloV2",
+      "value" : "https://zenodo.org/record/3941908#.YMtShJNKiZw"
+    }, {
+      "name" : "StarDist",
+      "value" : "https://zenodo.org/record/3715492#.YMtSgpNKiZw"
+    }, {
+      "name" : "DeepStorm",
+      "value" : "https://zenodo.org/record/3959089#.YMtSe5NKiZw"
+    } ],
+    "files" : [ {
+      "path" : "ZeroCostDl4Mic/CycleGAN SDCM to SRRF_v1",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "CycleGAN"
+      } ],
+      "type" : "directory"
+    }, {
+      "path" : "ZeroCostDl4Mic/CARE (2D)",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "Care (2D)"
+      } ],
+      "type" : "directory"
+    }, {
+      "path" : "ZeroCostDl4Mic/Noise2Void (3D)",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "Noise2Void (3D)"
+      } ],
+      "type" : "directory"
+    }, {
+      "path" : "ZeroCostDl4Mic/pix2pix Actin to Dapi dataset_v1",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "pix2pix"
+      } ],
+      "type" : "directory"
+    }, {
+      "path" : "ZeroCostDl4Mic/Label-free prediction (fnet) v2",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "fnet"
+      } ],
+      "type" : "directory"
+    }, {
+      "path" : "ZeroCostDl4Mic/YoloV2 dataset_v1",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "Yolov2"
+      } ],
+      "type" : "directory"
+    }, {
+      "path" : "ZeroCostDl4Mic/Noise2Void (2D)",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "Noise2Void (2D)"
+      } ],
+      "type" : "directory"
+    }, {
+      "path" : "ZeroCostDl4Mic/Stardist_v2",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "StarDist"
+      } ],
+      "type" : "directory"
+    }, {
+      "path" : "ZeroCostDl4Mic/DeepSTORM dataset_v1",
+      "size" : 4096,
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "DeepSTORM"
+      } ],
+      "type" : "directory"
+    } ],
+    "subsections" : [ {
+      "type" : "Publication",
+      "attributes" : [ {
+        "name" : "PMID",
+        "value" : "33859193"
+      }, {
+        "name" : "Authors",
+        "value" : "von Chamier L, Laine RF, Jukkala J, Spahn C, Krentzel D, Nehme E, Lerche M, Hernández-Pérez S, Mattila PK, Karinou E, Holden S, Solak AC, Krull A, Buchholz TO, Jones ML, Royer LA, Leterrier C, Shechtman Y, Jug F, Heilemann M, Jacquemet G, Henriques R."
+      }, {
+        "name" : "Title",
+        "value" : "Democratising deep learning for microscopy with ZeroCostDL4Mic."
+      }, {
+        "name" : "Year",
+        "value" : "2021"
+      }, {
+        "name" : "Volume",
+        "value" : "12"
+      }, {
+        "name" : "Issue",
+        "value" : "1"
+      } ]
+    }, {
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Craig Russell"
+      }, {
+        "name" : "E-mail",
+        "value" : "ctr26@ebi.ac.uk"
+      }, {
+        "name" : "affiliation",
+        "value" : "o1",
+        "reference" : true
+      } ]
+    }, {
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Guillaume Jacquemet"
+      }, {
+        "name" : "E-mail",
+        "value" : "guillaume.jacquemet@utu.fi"
+      }, {
+        "name" : "affiliation",
+        "value" : "o2",
+        "reference" : true
+      } ]
+    }, {
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Ricardo Henriquez"
+      }, {
+        "name" : "E-mail",
+        "value" : "rjhenriques@igc.gulbenkian.pt"
+      }, {
+        "name" : "affiliation",
+        "value" : "o3",
+        "reference" : true
+      } ]
+    }, {
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Romain Laine"
+      }, {
+        "name" : "E-mail",
+        "value" : "r.laine@ucl.ac.uk"
+      }, {
+        "name" : "affiliation",
+        "value" : "o4",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "o1",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "European Bioinformatics Institute (EMBL-EBI)"
+      } ]
+    }, {
+      "accno" : "o2",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Åbo Akademi University"
+      } ]
+    }, {
+      "accno" : "o3",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Instituto Gulbenkian de Ciência"
+      } ]
+    }, {
+      "accno" : "o4",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "University College London"
+      } ]
+    } ]
+  },
+  "type" : "submission"
+}

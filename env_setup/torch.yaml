@@ -1,0 +1,12 @@
+name: torch
+channels:
+  - pytorch
+  - conda-forge
+  - bioconda
+dependencies:
+  # - python=3.8   # or 2.7
+  - ipython
+  - pip
+  - pytorch
+  - cudatoolkit
+  # - pip:

@@ -1,0 +1,10 @@
+https://zenodo.org/record/3959089/files/DeepSTORM%20dataset_v1.zip?download=1
+https://zenodo.org/record/3715492/files/Stardist_v2.zip?download=1
+https://zenodo.org/record/3941908/files/YoloV2%20dataset_v1.zip?download=1
+https://zenodo.org/record/3941889/files/pix2pix%20Actin%20to%20Dapi%20dataset_v1.zip?download=1
+https://zenodo.org/record/3941884/files/CycleGAN%20SDCM%20to%20SRRF_v1.zip?download=1
+https://zenodo.org/record/3713337/files/CARE%20%283D%29.zip?download=1
+https://zenodo.org/record/3713326/files/Noise2Void%20%283D%29.zip?download=1
+https://zenodo.org/record/3713330/files/CARE%20%282D%29.zip?download=1
+https://zenodo.org/record/3713315/files/Noise2Void%20%282D%29.zip?download=1
+https://zenodo.org/record/3748967/files/Label-free%20prediction%20%28fnet%29%20v2.zip?download=1
