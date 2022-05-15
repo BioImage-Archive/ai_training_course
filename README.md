@@ -1,5 +1,3 @@
-Covers topics from day 1 and 2 of the 2020 BIA course with a focus on data-analysis management
-
 ## env_setup 
 
 Is an introduction to creating (repeatable) machine learning environments using python `*conda`
