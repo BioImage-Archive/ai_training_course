@@ -1,0 +1,9 @@
+snakemake/.*
+snakemake/cool_script/.*
+snakemake/Snake_multi/.*
+snakemake/cool_script_2/.*
+snakemake/microscopeimagequality/.*
+snakemake/in
+snakemake/out
+slides
+
