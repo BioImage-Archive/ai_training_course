@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
-  - python=3.8   # or 2.7
+  - python   # or 2.7
   - pims
   - ipython
   - pip
