@@ -10,6 +10,7 @@ dependencies:
   - pip
   - numpy
   - scikit-learn
+  - singularity
   - snakemake
   - pip:
     - ome-zarr

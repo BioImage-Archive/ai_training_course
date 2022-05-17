@@ -15,7 +15,7 @@ FILE_OUT_QUALITY = "out/quality"
 # All is a special rule that takes in the last output of the pipeline
 rule all:
 	input:
-		FILE_OUT_PNG,FILE_OUT_QUALITY,FILE_OUT,FILE
+		FILE_OUT_PNG,FILE_OUT,FILE
 
 rule scale_image_down_make_zarr:
 	input:
@@ -41,15 +41,15 @@ rule make_a_nice_png:
 	shell:
 		"python cool_script_2.py '{input}' '{output}'"
 
-rule docker_leg:
-	input:
-		FILE
-	output:
-		directory(FILE_OUT_QUALITY)
-	container:
-		"docker://ctr26/microscopeimagequality:latest"
-	shell:
-		"microscopeimagequality predict --output '{output}' '{input}'"
+#rule docker_leg:
+#	input:
+#		FILE
+#	output:
+#		directory(FILE_OUT_QUALITY)
+#	container:
+#		"docker://ctr26/microscopeimagequality:latest"
+#	shell:
+#		"microscopeimagequality predict --output '{output}' '{input}'"
 
 rule report:
 	input: FILE_OUT_QUALITY
