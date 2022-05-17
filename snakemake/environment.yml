@@ -6,6 +6,7 @@ dependencies:
   - python   # or 2.7
   - pims
   - ipython
+  - mamba
   - pip
   - numpy
   - scikit-learn
