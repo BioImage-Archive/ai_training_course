@@ -1,3 +1,7 @@
+envs.full:
+	mamba env create -f environment.yml
+envs.simple:
+	mamba install -c conda-forge -c bioconda snakemake
 run:
 	snakemake --cores all -F
 run_with_singularity:
