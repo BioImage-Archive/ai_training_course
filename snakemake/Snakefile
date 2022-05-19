@@ -11,11 +11,18 @@ FILE_OUT_PNG = "out/out.png"
 FILE_OUT_QUALITY = "out/quality"
 
 
+IMAGES_DIR = "in/Stardist/Training - Images/"
+MASKS_DIR = "in/Stardist/Training - Masks/"
+MODEL_OUT = "models"
+
+IMAGES_IN, = glob_wildcards("in/Stardist/Test - Images/{input_images}.tif")
+EXT = ".tif"
 
 # All is a special rule that takes in the last output of the pipeline
 rule all:
 	input:
-		FILE_OUT_PNG,FILE_OUT,FILE
+		FILE_OUT_PNG,FILE_OUT,FILE,MODEL_OUT,MODEL_OUT,
+        expand("stardist_out/{images_in}.png", images_in=IMAGES_IN)
 
 rule scale_image_down_make_zarr:
 	input:
@@ -50,6 +57,41 @@ rule make_a_nice_png:
 #		"docker://ctr26/microscopeimagequality:latest"
 #	shell:
 #		"microscopeimagequality predict --output '{output}' '{input}'"
+
+
+rule dist_training:
+	input:
+		images_dir="in/Stardist/Training - Images/",
+		masks_dir="in/Stardist/Training - Masks/"
+	output:
+	    directory(MODEL_OUT)
+	conda:
+	    "stardist.yml"
+	shell:
+		"python \
+        stardist_training.py \
+        --images_dir='{input.images_dir}'\
+        --masks_dir='{input.masks_dir}'\
+        --model_path='{output}'\
+        --ext='.tif'\
+        --epochs=50\
+        "
+
+rule dist_inference:
+    input:
+        model=MODEL_OUT,
+        images_in="in/Stardist/Test - Images/{images_in}.tif"
+    output:
+       "stardist_out/{images_in}.png"
+    conda:
+        "stardist.yml"
+    shell:
+        "python stardist_infer.py \
+                --image_in='{input.images_in}' \
+                --model_path='{input.model}' \
+                --figure_out='{output}' \
+        "
+
 
 rule report:
 	input: FILE_OUT_QUALITY
