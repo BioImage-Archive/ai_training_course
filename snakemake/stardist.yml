@@ -9,9 +9,10 @@ dependencies:
   - mamba
   - pip
   - numpy
-  - tensorflow
+  - tensorflow=2.9.1
   - scikit-learn
   - snakemake
+  - cudatoolkit
   - pip:
     - ome-zarr
     - stardist

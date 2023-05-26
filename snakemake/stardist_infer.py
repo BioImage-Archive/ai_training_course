@@ -3,7 +3,7 @@ from __future__ import print_function, unicode_literals, absolute_import, divisi
 import sys
 import numpy as np
 import matplotlib
-matplotlib.rcParams["image.interpolation"] = None
+#matplotlib.rcParams["image.interpolation"] = None
 import matplotlib.pyplot as plt
 
 from glob import glob
