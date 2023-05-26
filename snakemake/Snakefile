@@ -21,7 +21,11 @@ EXT = ".tif"
 # All is a special rule that takes in the last output of the pipeline
 rule all:
 	input:
-		FILE_OUT_PNG,FILE_OUT,FILE,MODEL_OUT,MODEL_OUT,
+		FILE_OUT_PNG,
+		FILE_OUT,FILE,
+		MODEL_OUT,
+		MODEL_OUT,
+		FILE_OUT_QUALITY,
         expand("stardist_out/{images_in}.png", images_in=IMAGES_IN)
 
 rule scale_image_down_make_zarr:
@@ -48,15 +52,15 @@ rule make_a_nice_png:
 	shell:
 		"python cool_script_2.py '{input}' '{output}'"
 
-#rule docker_leg:
-#	input:
-#		FILE
-#	output:
-#		directory(FILE_OUT_QUALITY)
-#	container:
-#		"docker://ctr26/microscopeimagequality:latest"
-#	shell:
-#		"microscopeimagequality predict --output '{output}' '{input}'"
+rule docker_leg:
+	input:
+		FILE
+	output:
+		directory(FILE_OUT_QUALITY)
+	container:
+		"docker://ctr26/microscopeimagequality:latest"
+	shell:
+		"microscopeimagequality predict --output '{output}' '{input}'"
 
 
 rule dist_training:
